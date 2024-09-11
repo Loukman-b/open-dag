@@ -159,6 +159,10 @@
             width: 70%;
             margin: 0 auto;
         }
+        img{
+            max-width: 100%;
+            height: auto;
+        }
         h2{
             text-align: center;
         }
@@ -239,7 +243,16 @@
             background-color: #555;
         }
 
-
+        @media (max-width: 768px) {
+        .vakken {
+            grid-template-columns: 1fr; 
+            
+        }
+        .rooster img, .blokindeling img {
+        width: 100%; 
+        height: auto;
+        }
+    }
     </style>
 </body>
 </html>
